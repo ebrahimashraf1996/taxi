@@ -1,0 +1,166 @@
+Sidetab {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    padding: 10px 0;
+}
+
+Sidetab .tabControls {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    user-select: none;
+}
+
+Sidetab .tabControls li label::before {
+    content: none;
+}
+
+Sidetab .tabControls li {
+    margin-inline-end: 10px;
+}
+
+Sidetab .tabControls li:last-of-type {
+    margin-inline-end: 0px;
+}
+
+Sidetab .tabControls li label {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+Sidetab .tabControls li input {
+    display: none;
+}
+
+Sidetab .tabControls li input:checked~label {
+    padding: 10px 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #EF3F3E;
+    color: #EF3F3E;
+    cursor: default;
+}
+
+Sidetab .viewer {
+    position: relative;
+    padding: 2rem 20px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+Sidetab .viewer>div {
+    /* position: absolute;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none; */
+    display: none;
+    animation: slideUpHide 0.4s ease-in-out;
+}
+
+Sidetab .viewer>div.active {
+    /* position: relative;
+    height: auto;
+    top: 0;
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.3s opacity ease-in-out; */
+    display: block;
+    animation: slideUpShow 1s ease-in-out;
+}
+
+@keyframes slideUpShow {
+    0% {
+        display: none;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    39% {
+        display: none;
+    }
+
+    40% {
+        display: block;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpHide {
+    0% {
+        display: block;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    90% {
+        display: block;
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media (width <=780px) {
+    Sidetab {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: stretch;
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    Sidetab .tabControls {
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    Sidetab .tabControls li {
+        margin-bottom: 0px;
+        margin-inline-start: 10px;
+    }
+
+    Sidetab .tabControls li:first-of-type {
+        margin-inline-start: 0px;
+    }
+}
+
+@media (width <=380px) {
+    Sidetab .tabControls {
+        flex-direction: column;
+    }
+
+    Sidetab .tabControls li {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    Sidetab .tabControls li:last-of-type {
+        margin-bottom: 0px;
+    }
+}

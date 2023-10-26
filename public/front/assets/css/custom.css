@@ -1,0 +1,454 @@
+.cab-section {
+    height: 50vh;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+header .btnsContainer {
+    display: flex;
+    align-items: stretch;
+}
+.cab-section .cab-content h2 {font-size: calc(8px + (45 - 16) * ((100vw - 320px) / (1920 - 320))); color: #000!important;text-transform: none;}
+.cab-section .cab-content {    height: 50vh;padding-top: 100px;}
+header .btnsContainer a,
+header .btnsContainer button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 0;
+    margin-inline-start: 10px;
+    color: #ef3f3e;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+header .btnsContainer a.user,
+header .btnsContainer button.user {
+    color: #000;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+header .btnsContainer a:first-child,
+header .btnsContainer button:first-child {
+    margin: 0;
+}
+
+header .menu nav .main-navbar .nav-menu li>a {
+    color: #000;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 5px 0;
+    margin-inline: 5px;
+    text-transform: uppercase;
+}
+
+header .menu nav .main-navbar .nav-menu li {
+min-width: 100px;text-align: center;
+}
+
+header .menu nav .main-navbar .nav-menu li>a:hover {
+    color: #ef3f3e;
+    border-bottom: 3px solid #ef3f3e;
+}
+
+header .btnsContainer .active {
+    background-color: #ef3f3e;
+    color: #fff;
+}
+
+header .btnsContainer img {
+    width: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-inline-end: 10px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu nav {
+    width: 70%;
+    margin: 0;
+}
+
+header .menu nav .main-navbar .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+}
+
+.cab-section .cab-content h2 {
+    margin-bottom: 20px;
+}
+
+.cab-section .cab-content label {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.selector-box li button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    padding: 5px 0;
+    padding-inline-start: 20px;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-control.open-select {
+    text-transform: capitalize;
+}
+
+.left-sidebar .middle-part .filter-block .custom-control-label p {
+    margin-bottom: 0px;
+    color: #999;
+    font-weight: 200;
+}
+
+.left-sidebar .middle-part .filter-block .custom-control-label p:first-child {
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 700;
+}
+
+.left-sidebar .middle-part .filter-block .collection-brand-filter .collection-filter-checkbox {
+    margin-bottom: 20px;
+}
+
+.custom-control:has(.form-group) {
+    padding: 0;
+}
+
+.carViewer img {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.carModel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.carModel img {
+    width: 60px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-inline-end: 20px;
+}
+
+.carViewer h4 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.carViewer h5 {
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #999;
+}
+
+.carViewer .pricing>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carViewer .pricing>div p {
+    color: #444;
+}
+
+.carViewer button {
+    background-color: #ef3f3e;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.carViewer .profile {
+    display: flex;
+    align-items: center;
+}
+
+.carViewer .profile .userInfo p {
+    margin: 0;
+}
+
+.carViewer .profile .userInfo h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.carViewer .profile img {
+    aspect-ratio: 1/1;
+    width: 70px;
+    border-radius: 50%;
+    margin-inline-end: 20px;
+    border: 2px solid #ef3f3e;
+}
+
+.car-review .review {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 20px;
+}
+
+.car-review .review:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.carViewer .review img {
+    aspect-ratio: 1/1;
+    width: 70px;
+    border-radius: 50%;
+    margin-inline-end: 20px;
+    border: 2px solid #ef3f3e;
+}
+
+.carViewer .review .rate i {
+    color: gold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+.car-location p {
+    color: #333;
+}
+
+.car-location i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #ef3f3e;
+    border-radius: 5px;
+    margin-inline: 20px 10px;
+}
+
+.dataPreviewer>div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 0;
+}
+
+.dataPreviewer>div:nth-child(even) {
+    background-color: #eeee;
+}
+
+.dataPreviewer>div p {
+    color: #000;
+    margin: 0;
+    padding: 10px 0px;
+    border-block: 1px solid #eee;
+}
+
+.dataPreviewer>div p:first-of-type {
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-inline-start: 10px;
+}
+
+.overview.dataPreviewer>div p:first-of-type::after {
+    content: ' :';
+}
+
+.features.dataPreviewer>div img {
+    width: 100%;
+}
+
+.features.dataPreviewer>div {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.features.dataPreviewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.features.dataPreviewer>div p {
+    border-block: none;
+}
+
+.features>div:nth-child(even) {
+    background-color: #fff;
+}
+
+.features>div:nth-child(4n+3),
+.features>div:nth-child(4n+4) {
+    background-color: #eee;
+}
+
+/*
+
+    0    3 ...... 4
+    1    7 ...... 8
+    2    11 ..... 12
+
+    0+4 => 4
+    1+7 => 7
+    2+10 => 10
+
+
+
+
+
+    0+3 =? 3
+    1+6 => 6
+*/
+
+.iti {
+    display: block;
+}
+
+p.termsOfUse {
+    color: #777;
+}
+
+p.termsOfUse a {
+    color: #ef3f3e;
+}
+
+.passwordContainer {
+    display: flex;
+}
+
+.passwordContainer button {
+    border: none;
+    outline: none;
+    width: 70px;
+    background-color: #ef3f3e;
+    border: 1px solid #eee;
+    color: #fff;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 0fr 1fr;
+    transition: 0.3s all ease-in-out;
+}
+
+.passwordContainer button.hide {
+    grid-template-rows: 1fr 0fr;
+}
+
+.passwordContainer button * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+@media (width <=1050px) {
+    header .menu nav {
+        width: auto;
+    }
+
+    header .btnsContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .menu nav .main-navbar .nav-menu {
+        flex-direction: column;
+    }
+
+    header .menu nav .main-navbar .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .menu nav .main-navbar .nav-menu ul li {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (width <=450px) {
+    .car-review .review {
+        padding: 1rem 5px;
+    }
+}
+
+
+@media (min-width: 1461px) {
+    .main_cont {
+        max-width: 1490px;
+    }
+}
+@media (min-width: 1600px) {
+    .main_cont {
+        max-width: 1800px;
+    }
+}
+@media (max-width: 560px) {
+    .cab-section .cab-content h2 {font-size: calc(14px + (45 - 16) * ((100vw - 320px) / (1920 - 320)))}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* My New */
+
+
+.contact_land {width: 100%;background:#ffc500;color: #000;transition: background .2s ease-out;padding: 10px;
+    font-size: 20px; }
+.contact_land:hover{background: #cc9e00;color: #000}
+li.contact {
+    width: 100%;
+    /*height: 42px;*/
+    /*background-color: black;*/
+}
+
+
+
+@media (min-width: 769px) {
+    .nav-menu {margin-left: -140px!important;}
+
+}
+
+
+
+
+
+
